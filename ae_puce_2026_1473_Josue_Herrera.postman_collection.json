@@ -10,8 +10,137 @@
     {
       "name": "New Request",
       "request": {
-        "method": "GET",
-        "header": []
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJraWQiOiJqMldPV1dNeGpuZzFWRGtwcW5lOUJ1aWtyd2ZiSGptdVJaOUhyNVNlL2g4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNDE4YjQwOC0xMGUxLTcwZjAtZjFkYS04NGIwMDExZDUzZjgiLCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV95endOQUxJMkEiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiIzZ3Yyb3FlNG5pa28zczQ3c3JuMWtpdHNrNiIsIm9yaWdpbl9qdGkiOiIxYzc4MjQwZi03OTAzLTQ1ZTQtYTY1Zi1hMDcwNjdkNGQ0YjUiLCJldmVudF9pZCI6ImQwN2QwNTcxLTRiNjEtNDFkNS05N2Y2LTljYzVmODYyMTA2MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicGhvbmUgb3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNzgyOTY2ODc0LCJleHAiOjE3ODI5NzA0NzQsImlhdCI6MTc4Mjk2Njg3NCwianRpIjoiOTFjZmI3MGMtMDdmMS00NjYzLWE3Y2QtMGQ2NTJlNGFhMDZkIiwidXNlcm5hbWUiOiJjNDE4YjQwOC0xMGUxLTcwZjAtZjFkYS04NGIwMDExZDUzZjgifQ.EpTOWREJSOlRRiNEuTNaf010qVl9s40IAdX3haUHvR_8h6du1zR1AD0womXF62x8k0VqT5UhfL1H07q2PweX8sFbfCPWB-RNpvI0544HzVQS7h5gArONma307UwZYlwmbYSrFZ2gKGT2vMkeZhJbY_X7UORX-ze9PW5gGb5uWTHs-K8iONWwFxOAGSGvFOcbkyCvduEITFw9d54emyyCN39gSKBTQ_6H4Ig3VK7nJ-C46hTOANIg44UwfiQAzj84h33bJHczrGPFE8sv-7eYbXj6r_Oc6naaatvM2_sS6ZJp0uUwn58Fk5oakjito8chuu_f0bjF-tEtRidg2_Y1Lw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Concierto de chicha\",\r\n    \"venue\": \"Coliseo\",\r\n    \"totalTickets\": 200\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJraWQiOiJqMldPV1dNeGpuZzFWRGtwcW5lOUJ1aWtyd2ZiSGptdVJaOUhyNVNlL2g4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNDE4YjQwOC0xMGUxLTcwZjAtZjFkYS04NGIwMDExZDUzZjgiLCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV95endOQUxJMkEiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiIzZ3Yyb3FlNG5pa28zczQ3c3JuMWtpdHNrNiIsIm9yaWdpbl9qdGkiOiIxYzc4MjQwZi03OTAzLTQ1ZTQtYTY1Zi1hMDcwNjdkNGQ0YjUiLCJldmVudF9pZCI6ImQwN2QwNTcxLTRiNjEtNDFkNS05N2Y2LTljYzVmODYyMTA2MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicGhvbmUgb3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNzgyOTY2ODc0LCJleHAiOjE3ODI5NzA0NzQsImlhdCI6MTc4Mjk2Njg3NCwianRpIjoiOTFjZmI3MGMtMDdmMS00NjYzLWE3Y2QtMGQ2NTJlNGFhMDZkIiwidXNlcm5hbWUiOiJjNDE4YjQwOC0xMGUxLTcwZjAtZjFkYS04NGIwMDExZDUzZjgifQ.EpTOWREJSOlRRiNEuTNaf010qVl9s40IAdX3haUHvR_8h6du1zR1AD0womXF62x8k0VqT5UhfL1H07q2PweX8sFbfCPWB-RNpvI0544HzVQS7h5gArONma307UwZYlwmbYSrFZ2gKGT2vMkeZhJbY_X7UORX-ze9PW5gGb5uWTHs-K8iONWwFxOAGSGvFOcbkyCvduEITFw9d54emyyCN39gSKBTQ_6H4Ig3VK7nJ-C46hTOANIg44UwfiQAzj84h33bJHczrGPFE8sv-7eYbXj6r_Oc6naaatvM2_sS6ZJp0uUwn58Fk5oakjito8chuu_f0bjF-tEtRidg2_Y1Lw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"josue herrera\",\r\n    \"email\": \"josue@gmail.com\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/attendees",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "attendees"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJraWQiOiJqMldPV1dNeGpuZzFWRGtwcW5lOUJ1aWtyd2ZiSGptdVJaOUhyNVNlL2g4PSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJjNDE4YjQwOC0xMGUxLTcwZjAtZjFkYS04NGIwMDExZDUzZjgiLCJpc3MiOiJodHRwczovL2NvZ25pdG8taWRwLnVzLWVhc3QtMS5hbWF6b25hd3MuY29tL3VzLWVhc3QtMV95endOQUxJMkEiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiIzZ3Yyb3FlNG5pa28zczQ3c3JuMWtpdHNrNiIsIm9yaWdpbl9qdGkiOiIxYzc4MjQwZi03OTAzLTQ1ZTQtYTY1Zi1hMDcwNjdkNGQ0YjUiLCJldmVudF9pZCI6ImQwN2QwNTcxLTRiNjEtNDFkNS05N2Y2LTljYzVmODYyMTA2MyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoicGhvbmUgb3BlbmlkIGVtYWlsIiwiYXV0aF90aW1lIjoxNzgyOTY2ODc0LCJleHAiOjE3ODI5NzA0NzQsImlhdCI6MTc4Mjk2Njg3NCwianRpIjoiOTFjZmI3MGMtMDdmMS00NjYzLWE3Y2QtMGQ2NTJlNGFhMDZkIiwidXNlcm5hbWUiOiJjNDE4YjQwOC0xMGUxLTcwZjAtZjFkYS04NGIwMDExZDUzZjgifQ.EpTOWREJSOlRRiNEuTNaf010qVl9s40IAdX3haUHvR_8h6du1zR1AD0womXF62x8k0VqT5UhfL1H07q2PweX8sFbfCPWB-RNpvI0544HzVQS7h5gArONma307UwZYlwmbYSrFZ2gKGT2vMkeZhJbY_X7UORX-ze9PW5gGb5uWTHs-K8iONWwFxOAGSGvFOcbkyCvduEITFw9d54emyyCN39gSKBTQ_6H4Ig3VK7nJ-C46hTOANIg44UwfiQAzj84h33bJHczrGPFE8sv-7eYbXj6r_Oc6naaatvM2_sS6ZJp0uUwn58Fk5oakjito8chuu_f0bjF-tEtRidg2_Y1Lw",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"attendeeId\": 1,\r\n    \"eventId\": 1\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/reservations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "reservations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/reservations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "reservations"
+          ]
+        }
       },
       "response": []
     },
@@ -19,39 +148,77 @@
       "name": "New Request",
       "request": {
         "method": "GET",
-        "header": []
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/events",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "events"
+          ]
+        }
       },
       "response": []
     },
     {
       "name": "New Request",
       "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
-    },
-    {
-      "name": "New Request",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
-    },
-    {
-      "name": "New Request",
-      "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
-    },
-    {
-      "name": "New Request",
-      "request": {
-        "method": "GET",
-        "header": []
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "grant_type",
+              "value": "authorization_code",
+              "type": "text",
+              "uuid": "65f6b767-11a2-4013-8fd7-fbc80bdc035e"
+            },
+            {
+              "key": "client_id",
+              "value": "3gv2oqe4niko3s47srn1kitsk6",
+              "type": "text",
+              "uuid": "90fa07a2-a112-42a4-90c0-178b41dfd8c6"
+            },
+            {
+              "key": "client_secret",
+              "value": "14qdd388f1j6fge52el3l5r2ouvcg5sperlno3701t2jj1chgeiu",
+              "type": "text",
+              "uuid": "ee43b48a-dd3f-4608-bc92-34231944db42"
+            },
+            {
+              "key": "redirect_uri",
+              "value": "https://d84l1y8p4kdic.cloudfront.net",
+              "type": "text",
+              "uuid": "9446a0b0-7dc1-437e-affb-561600050821"
+            },
+            {
+              "key": "code",
+              "value": "6f15aef2-4ea6-4f6f-ae40-9fde7cb308e3",
+              "type": "text",
+              "uuid": "bd8cabcf-49a2-4993-a71d-042fc8b648f7"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://us-east-1yzwnali2a.auth.us-east-1.amazoncognito.com/oauth2/token",
+          "protocol": "https",
+          "host": [
+            "us-east-1yzwnali2a",
+            "auth",
+            "us-east-1",
+            "amazoncognito",
+            "com"
+          ],
+          "path": [
+            "oauth2",
+            "token"
+          ]
+        }
       },
       "response": []
     }
